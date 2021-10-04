@@ -1,0 +1,19 @@
+;<?php
+	;echo "ERROR!"
+	;die(); //Kill direct connection to file.
+	;
+
+	[Sonarr]
+	SonarrURL = "http://192.168.1.5:8989/api"; // Sonarr URL, ensuring to keep /api appended here.
+	SonarrAPIKey = "SonarrAPIKeyHere"; // Sonarr API Key
+	ThrottledTagName = "throttled"; // Name of Throttled tag within Sonarr. ID will be found automatically.
+
+	[Webhooks]
+	WebhookAPIToken = "CreateASecureTokenHere"; // Authorization Token for Webhook
+	
+	[Settings]
+	SeasonCountThreshold = "5"; // Greater than this number of seasons and the series will be marked as throttled.
+	EpisodeCountThreshold = "25"; // Greater than this number of episodes and the series will be marked as throttled.
+	EpisodeSearchCount = "10"; // Number of initial episodes to search for when adding a throttled TV Show
+	;
+;?>
